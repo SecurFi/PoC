@@ -7,7 +7,7 @@ You may utilize these demonstrative PoCs for local debugging as well as proof ge
 ### Prerequisite
 
 * [Foundry](https://github.com/foundry-rs/foundry)
-* [zkProver](https://github.com/0xHackedLabs/zkProver)
+* [zkProver](https://huggingface.co/spaces/0xHacked/zkProver)
 
 ### Debug locally
 
@@ -38,11 +38,9 @@ GPU: Tesla V100
 OS: Ubuntu 20.04
 ```
 
-| PoC | With GPU | Time|
-|----|---------|-----|
-|SushiRouter| Yes| 4.8 minutes |
-|FuseProtocol| Yes | 1.3 hours |
-|SushiRouter | NO |  1.6 hours |
-|FuseProtocol | NO | ? |
+| PoC          | With GPU | Time        |
+|--------------|----------|-------------|
+| SushiRouter  | Yes      | 4.8 minutes |
+| FuseProtocol | Yes      | 1.3 hours   |
 
 For more details, please check out at https://docs.0xhacked.com/benchmark.
