@@ -7,7 +7,7 @@ You may utilize these demonstrative PoCs for local debugging as well as proof ge
 ### Prerequisite
 
 * [Foundry](https://github.com/foundry-rs/foundry)
-* [zkProver](https://huggingface.co/spaces/0xHacked/zkProver)
+* [zkProver](https://github.com/0xHackedLabs/zkProver)
 
 ### Debug locally
 
