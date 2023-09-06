@@ -20,12 +20,12 @@ forge test -vv
 * SushiRouter
 
 ```bash
-zkProver evm -r https://rpc.flashbots.net -b 17007841 src/SushiRouter/SushiRouterExploit.sol:SushiExpProxy
+zkProver evm -r https://rpc.flashbots.net -b 17007841 src/SushiRouter/SushiRouterExploit.sol
 ```
 * FuseProtocol
 
 ```bash
-zkProver evm -r https://rpc.flashbots.net/ -b 17007841 src/fuseProtocol/FuseProtocolExploit.sol:FuseProtocolExploit
+zkProver evm -r https://rpc.flashbots.net/ -b 17007841 src/fuseProtocol/FuseProtocolExploit.sol
 ```
 
 ## Performance

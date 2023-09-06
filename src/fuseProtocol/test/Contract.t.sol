@@ -4,16 +4,16 @@ import "forge-std/Test.sol";
 import "../FuseProtocolExploit.sol";
 
 contract ContractTest is Test{
-    FuseProtocolExploit f;
+    Exploit exp;
 
     function setUp() public {
-        vm.createSelectFork("https://rpc.flashbots.net/", 14684684);
+        vm.createSelectFork("mainnet", 14684684);
     }
 
     function testFuseProtocol() public {
-        f = new FuseProtocolExploit();
-        console.log("before in ETH", address(f).balance);
-        f.exploit();
-        console.log("after in ETH", address(f).balance);
+        exp = new Exploit();
+        console.log("ETH balance before attack: ", address(exp).balance);
+        exp.exploit();
+        console.log("ETH balance after attack", address(exp).balance);
     }
 }
