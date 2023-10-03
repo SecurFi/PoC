@@ -1,8 +1,12 @@
 # PoC
 
-You may utilize these demonstrative PoCs for local debugging as well as proof generation.
+You may utilize these demonstrative PoCs for local debugging as well as generating the proof of exploit.
 
-## Quickstart
+## Generate the proof via [0xHacked Online Tool](https://www.0xhacked.com/tool).
+
+Submit your PoC file on [0xHacked Online Tool](https://www.0xhacked.com/tool) and download the proof upon completion. It usually takes minutes.
+
+## Generate the proof via [zkProver](https://github.com/0xHackedLabs/zkProver)
 
 ### Prerequisite
 
@@ -27,20 +31,3 @@ zkProver evm -r https://rpc.flashbots.net -b 17007841 src/SushiRouter/SushiRoute
 ```bash
 zkProver evm -r https://rpc.flashbots.net/ -b 17007841 src/fuseProtocol/FuseProtocolExploit.sol
 ```
-
-## Performance
-
-```
-CPU: Intel(R) Xeon(R) Gold 6133 CPU @ 2.50GHz
-CPU Cores: 8
-MEM: 38G
-GPU: Tesla V100
-OS: Ubuntu 20.04
-```
-
-| PoC          | With GPU | Time        |
-|--------------|----------|-------------|
-| SushiRouter  | Yes      | 4.8 minutes |
-| FuseProtocol | Yes      | 1.3 hours   |
-
-For more details, please check out at https://docs.0xhacked.com/benchmark.
