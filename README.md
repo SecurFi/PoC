@@ -1,31 +1,40 @@
 # PoC
 
-You may utilize these demonstrative PoCs for local debugging as well as generating the proof of exploit.
+This repository contains serveral sample attack transactions. We highly recommend you to start hacking from this repository.
 
-## Generate the proof via [0xHacked Online Tool](https://www.0xhacked.com/tool).
+After local debugging of PoC, you can generate the proof of exploit locally using [zkProver](https://github.com/0xHackedLabs/zkProver) or do it online on the [0xHacked Online Tool](https://0xHacked.com/tool).
 
-Submit your PoC file on [0xHacked Online Tool](https://www.0xhacked.com/tool) and download the proof upon completion. It usually takes minutes.
+If you prefer to generate the proof of exploit locally, please follow the steps below.
 
-## Generate the proof via [zkProver](https://github.com/0xHackedLabs/zkProver)
-
-### Prerequisite
+### 1. requirements
 
 * [Foundry](https://github.com/foundry-rs/foundry)
 * [zkProver](https://github.com/0xHackedLabs/zkProver)
 
-### Debug locally
+### 2. PoC
+
+Write the PoC using the provided [template](src/SamplePoC.sol).
+
+### 3. debug locally
 
 ```bash
 forge test -vv
 ```
 
-### Generating the proof of exploit
+### 4. generate the proof of exploit
+
+``` bash
+zkProver evm -r https://rpc.flashbots.net/ src/SamplePoC.sol
+```
+
+Additionally, you can generate sample proofs of exploits to view more details on [0xHacked.com](https://0xHacked.com).
 
 * SushiRouter
 
 ```bash
 zkProver evm -r https://rpc.flashbots.net -b 17007841 src/SushiRouter/SushiRouterExploit.sol
 ```
+
 * FuseProtocol
 
 ```bash
