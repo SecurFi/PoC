@@ -13,7 +13,7 @@ If you prefer to generate the proof of exploit locally, please follow the steps 
 
 ### 2. PoC
 
-Write the PoC using the provided [template](src/SamplePoC.sol).
+Write the PoC using the provided [template](src/Exploit.sol).
 
 ### 3. debug locally
 
@@ -24,7 +24,7 @@ forge test -vv
 ### 4. generate the proof of exploit
 
 ``` bash
-zkProver evm -r https://rpc.flashbots.net/ src/SamplePoC.sol
+zkProver evm -r https://rpc.flashbots.net/ src/Exploit.sol
 ```
 
 Additionally, you can generate sample proofs of exploits to view more details on [0xHacked.com](https://0xHacked.com).
