@@ -38,7 +38,7 @@ zkProver evm -r https://rpc.flashbots.net -b 17007841 src/SushiRouter/SushiRoute
 * FuseProtocol
 
 ```bash
-zkProver evm -r https://rpc.flashbots.net/ -b 17007841 src/fuseProtocol/FuseProtocolExploit.sol
+zkProver evm -r https://rpc.flashbots.net/ -b 14684684 src/fuseProtocol/FuseProtocolExploit.sol
 ```
 
 * Anyswap
