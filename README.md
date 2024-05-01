@@ -2,14 +2,14 @@
 
 This repository contains serveral sample attack transactions. We highly recommend you to start hacking from this repository.
 
-After local debugging of PoC, you can generate the proof of exploit locally using [zkProver](https://github.com/0xHackedLabs/zkProver) or do it online on the [0xHacked Online Tool](https://0xHacked.com/tool).
+After local debugging of PoC, you can generate the proof of exploit locally using [zkProver](https://github.com/SecurFi/zkProver) or do it online on the [SecurFi Online Tool](https://SecurFi.com/tool).
 
 If you prefer to generate the proof of exploit locally, please follow the steps below.
 
 ### 1. requirements
 
 * [Foundry](https://github.com/foundry-rs/foundry)
-* [zkProver](https://github.com/0xHackedLabs/zkProver)
+* [zkProver](https://github.com/SecurFi/zkProver)
 
 ### 2. PoC
 
@@ -27,7 +27,7 @@ forge test -vv
 zkProver evm -r https://rpc.flashbots.net/ src/Exploit.sol
 ```
 
-Additionally, you can generate sample proofs of exploits to view more details on [0xHacked.com](https://0xHacked.com).
+Additionally, you can generate sample proofs of exploits to view more details on [Secur.Fi](https://Secur.Fi).
 
 * SushiRouter
 
